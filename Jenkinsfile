@@ -23,7 +23,7 @@ pipeline {
                     
                     // Copy scripts/data from workspace to the persistent folder
                     // This ensures Active Choices can see them regardless of workspace cleanup
-                    sh "cp -r ${WORKSPACE}/metadata/*.json ${targetDir}/"
+                    sh "cp -r ${WORKSPACE} ${targetDir}/"
                 }
             }
         }
